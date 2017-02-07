@@ -30,3 +30,8 @@ RewriteRule ^(.*)$ index.php [QSA,L]
 
 Buka halaman <code>localhost/babarcode</code> dari browser.
 Voila!
+
+<p><strong>Via Composer</strong></p>
+<pre>
+composer require bar/babarcode dev-master
+</pre>
