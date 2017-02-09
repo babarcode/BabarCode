@@ -1,0 +1,49 @@
+<h3>Helper</h3>
+<p><strong>Json</strong></p>
+<p><strong>1. Load Class</strong></p>
+<pre>
+use system\helper\Json;
+</pre>
+<p><strong>2. Json Encode</strong></p>
+<pre>
+Json::encode('encode sekarang');
+</pre>
+<p><strong>3. Json Decode</strong></p>
+<pre>
+Json::decode($json_encoded_text);
+</pre>
+
+<p><strong>Request</strong></p>
+<p><strong>1. Load Class</strong></p>
+<pre>
+use system\helper\Request;
+</pre>
+<p><strong>2. Mendapatkan Parameter GET</strong></p>
+<pre>
+Request::get(); // Return semua parameter GET (array)
+Request::get('id'); // Return parameter GET dengan index 'id'
+</pre>
+<p><strong>3. Mendapatkan Parameter POST</strong></p>
+<pre>
+Request::post(); // Return semua parameter POST (array)
+Request::post('id'); // Return parameter POST dengan index 'id'
+</pre>
+<p><strong>4. Mendapatkan Parameter URI pada halaman yang sedang dibuka</strong></p>
+<pre>
+Request::uri();
+</pre>
+<p><strong>5. Mendapatkan Parameter URI pada halaman yang sedang dibuka berdasarkan segment</strong></p>
+<pre>
+Request::uri_segment(); // Return semua URI Segment (array)
+Request::uri_segment(1); // Return URI Segment pertama, segment dimulai dari 1
+</pre>
+<p><strong>6. Mendapatkan Parameter Header</strong></p>
+<pre>
+Request::header(); // Return semua parameter Header (array)
+Request::header('Host'); // Return parameter Header dengan index 'Host'
+</pre
+<p><strong>7. Mendapatkan Parameter $_SERVER</strong></p>
+<pre>
+Request::header(); // Return semua parameter $_SERVER (array)
+Request::header('REQUEST_METHOD'); // Return parameter $_SERVER dengan index 'REQUEST_METHOD'
+</pre>

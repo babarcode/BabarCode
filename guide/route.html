@@ -1,0 +1,62 @@
+<h3>Route</h3>
+<p><strong>Halaman Utama</strong></p>
+<pre>
+Babar::route('/',function(){
+&nbsp;&nbsp;&nbsp;echo 'Hello World!';
+});
+</pre>
+
+<p>
+<strong>Halaman Dengan Parameter URI Numerik</strong>
+<br>
+Contoh: <span class="link">localhost/babar/test/123</span>
+</p>
+<pre>
+Babar::route('/test/[:num]',function(){
+&nbsp;&nbsp;&nbsp;echo 'Ini halaman test uri numerik!';
+});
+</pre>
+
+<p>
+<strong>Halaman Dengan Parameter URI String</strong>
+<br>
+Contoh: <span class="link">localhost/babar/test/satuduatiga</span>
+</p>
+<pre>
+Babar::route('/test/[:string]',function(){
+&nbsp;&nbsp;&nbsp;echo 'Ini halaman test uri string!';
+});
+</pre>
+
+<p>
+<strong>Halaman Dengan Parameter URI Alpha Numerik</strong>
+<br>
+Contoh: <span class="link">localhost/babar/test/satudua3</span>
+</p>
+<pre>
+Babar::route('/test/[:alphanum]',function(){
+&nbsp;&nbsp;&nbsp;echo 'Ini halaman test uri alpha numerik!';
+});
+</pre>
+
+<p>
+<strong>Halaman Dengan Parameter URI Wildcard</strong>
+<br>
+Contoh: <span class="link">localhost/babar/test/79315-71374</span>
+</p>
+<pre>
+Babar::route('/test/[:any]',function(){
+&nbsp;&nbsp;&nbsp;echo 'Ini halaman test uri wildcard!';
+});
+</pre>
+
+<p>
+<strong>Halaman Dengan Parameter URI Gabungan</strong>
+<br>
+Contoh: <span class="link">localhost/babar/cek/test123/12345</span>
+</p>
+<pre>
+Babar::route('[:string]/[:alphanum]/[:num]',function(){
+&nbsp;&nbsp;&nbsp;echo 'Ini halaman test uri gabungan!';
+});
+</pre>
