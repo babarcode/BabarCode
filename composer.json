@@ -2,7 +2,6 @@
     "name": "bar/babarcode",
     "description": "BabarCode adalah super micro framework yang dapat membantu Anda membuat aplikasi web dan API dengan mudah dan cepat. Hanya dengan beberapa langkah mudah, aplikasi Anda dapat berjalan!",
     "homepage": "https://jyat182.github.io/BabarCode/",
-    "version": "beta 1.0",
     "require-dev": {
         "phpunit/phpunit": "~4.6"
     },
@@ -16,5 +15,8 @@
     "minimum-stability": "beta",
     "require": {
         "php": ">=5.6.0"
+    },
+    "autoload": {
+        "files": [ "system/babar.php" ]
     }
 }
