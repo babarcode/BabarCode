@@ -33,5 +33,5 @@ Voila!
 
 <p><strong>Via Composer</strong></p>
 <pre>
-composer require bar/babarcode dev-master
+composer require bar/babarcode dev-beta-1.1
 </pre>
