@@ -18,6 +18,7 @@
 		private static $start_time;
 		private static $end_time;
 		private static $load_time;
+		private static $config = array();
 
 		/*
 		|--------------------------------------------------------------------------
@@ -132,6 +133,37 @@
 			self::_set_start_time();
 			self::_set_version();
 			router::start();
+		}
+
+		/*
+		|--------------------------------------------------------------------------
+		| Register Config
+		|--------------------------------------------------------------------------
+		|
+		*/
+		public static function reg_config($config = array())
+		{
+			self::$config = $config;
+		}
+
+		/*
+		|--------------------------------------------------------------------------
+		| Read Config
+		|--------------------------------------------------------------------------
+		|
+		*/
+		public static function read_config($index = '')
+		{
+			$config = self::$config;
+			if($index != '')
+			{
+				$config = null;
+				if(array_key_exists($index,self::$config))
+				{
+					$config = self::$config[$index];
+				}
+			}
+			return $config;
 		}
 
 	}

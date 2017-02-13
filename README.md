@@ -1,4 +1,4 @@
-# BabarCode beta 1.0
+# BabarCode beta 1.1
 BabarCode adalah super micro framework yang dapat membantu Anda membuat aplikasi web dan API dengan mudah dan cepat. Hanya dengan beberapa langkah mudah, aplikasi Anda dapat berjalan!
 <br>
 <p><strong>1. Load Framework</strong></p>

@@ -101,9 +101,13 @@
 				{
 
 					ob_clean();
+					
 					if($match['route'][0] == self::$real_request_uri){
-						Babar::set_end_time();
-						return $value();
+						
+						$value(Babar::set_end_time());
+						
+						exit;
+
 					}
 
 				}

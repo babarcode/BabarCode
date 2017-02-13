@@ -6,11 +6,8 @@
 	 *--------------------------------------------------------------------------*/
 
 	/*----------------------------------------------------------------------------
-	 * AutoLoad
+	 * AutoLoad Driver
 	 *--------------------------------------------------------------------------*/
-	require __DIR__.'/constant.php';
-	require __DIR__.'/router.php';
-	require __DIR__.'/db/db.php';
-	require __DIR__.'/helper/json.php';
-	require __DIR__.'/helper/request.php';
-	require __DIR__.'/helper/view.php';
+	require __DIR__.'/driver/iDriver.php';
+	require __DIR__.'/driver/mysql.php';
+	require __DIR__.'/driver/sqlsrv.php';
