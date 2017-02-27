@@ -19,6 +19,7 @@
 			$param = $_GET;
 			if($name != ''){
 				if(isset($_GET[$name])) $param = $_GET[$name];
+				else $param = '';
 			} 
 			return $param;
 		}
@@ -49,6 +50,7 @@
 			$param = $_POST;
 			if($name != ''){
 				if(isset($_POST[$name])) $param = $_POST[$name];
+				else $param = '';
 			} 
 			return $param;
 		}
@@ -79,6 +81,7 @@
 			$param = $_SERVER;
 			if($name != ''){
 				if(isset($_SERVER[$name])) $param = $_SERVER[$name];
+				else $param = '';
 			} 
 			return $param;
 		}
@@ -95,6 +98,7 @@
 			if($name != '')
 			{
 				if(isset($param[$name])) $param = $param[$name];
+				else $param = '';
 			}
 			return $param;
 		}
